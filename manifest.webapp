@@ -1,0 +1,26 @@
+{
+  "name": "Up2Fb",
+  "description": "An app for sharing pictures on Facebook",
+  "launch_path": "index.html",
+  "icons": {
+    "128": "/assets/icon-128.png"
+  },
+  "developer": {
+    "name": "Xes García",
+    "url": "http://www.muaki.com"
+  },
+  "default_locale": "en"
+
+"activities": {
+  "share": {
+    "filters": {
+      "type": [ "image/png", "image/gif" ]
+    },
+    "href": "foo.html",
+    "disposition": "window",
+    "returnValue": true
+  }
+},
+
+
+}
