@@ -9,18 +9,32 @@
     "name": "Xes García",
     "url": "http://www.muaki.com"
   },
-  "default_locale": "en"
-
-"activities": {
-  "share": {
-    "filters": {
-      "type": [ "image/png", "image/gif" ]
-    },
-    "href": "foo.html",
-    "disposition": "window",
-    "returnValue": true
+  "default_locale": "en",
+  
+  "activities": {
+    "share": {
+      "href": "/share.html", 
+      "returnValue": true, 
+      "disposition": "inline", 
+      "filters": {
+        "type": "image/*", 
+        "number": 1
+      }
+    }, 
+    "pick": {
+      "href": "/pick.html", 
+      "returnValue": true, 
+      "disposition": "inline", 
+      "filters": {
+        "width": 320, 
+        "type": [
+          "image/*", 
+          "image/jpeg"
+        ], 
+        "height": 480
+      }
+    }
   }
-},
 
 
 }
