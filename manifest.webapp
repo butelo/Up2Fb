@@ -34,7 +34,24 @@
         "height": 480
       }
     }
-  }
+  },
 
+    "installs_allowed_from": ["*"],
+    "type": "privileged",
+
+
+
+    "permissions": {
+"systemXHR": { "description":"Used to send data to Facebook API." }
+    },
+
+
+"redirects": [
+  
+     {"to": "/redirect/redirect.html",
+     "from": "https://www.facebook.com/connect/login_success.html"
+    }
+
+]
 
 }
